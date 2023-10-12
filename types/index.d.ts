@@ -1,0 +1,1 @@
+type MyCutomType = 'a' | 'b';
