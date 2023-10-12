@@ -80,13 +80,13 @@ const props = withDefaults(defineProps<Props>(), {
   preview: 'Tienda en Mano - Recibo de compra',
   header: () => ({
     icon: {
-      url: 'https://raw.githubusercontent.com/Novanet-Studio/cmstem-fe/main/static/favicon.png',
-      alt: 'Tienda en Mano',
+      url: 'https://raw.githubusercontent.com/Novanet-Studio/tem-core/main/static/email/favicon.png',
+      alt: 'Novanet Logo',
     },
   }),
   footer: () => ({
     cta: {
-      link: 'https://caracasmultisport.com/',
+      link: 'https://tem-demo.netlify.app/',
       text: 'Ir a la tienda',
     },
     copyright: {

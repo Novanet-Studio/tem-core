@@ -94,8 +94,8 @@ const props = withDefaults(defineProps<Props>(), {
   preview: 'Tienda en Mano - Recibo de compra',
   header: () => ({
     icon: {
-      url: 'https://raw.githubusercontent.com/Novanet-Studio/cmstem-fe/main/static/favicon.png',
-      alt: 'Caracas Multisport',
+      url: 'https://raw.githubusercontent.com/Novanet-Studio/tem-core/main/static/email/favicon.png',
+      alt: 'Novanet Logo',
     },
     contact: {
       email: 'temdemo@gmail.com',
@@ -110,15 +110,15 @@ const props = withDefaults(defineProps<Props>(), {
     },
     social: [
       {
-        icon: 'https://raw.githubusercontent.com/Novanet-Studio/cmstem-fe/develop/static/email/x.png',
+        icon: 'https://raw.githubusercontent.com/Novanet-Studio/tem-core/main/static/email/x.png',
         link: '#',
       },
       {
-        icon: 'https://raw.githubusercontent.com/Novanet-Studio/cmstem-fe/develop/static/email/facebook.png',
+        icon: 'https://raw.githubusercontent.com/Novanet-Studio/tem-core/main/static/email/facebook.png',
         link: '#',
       },
       {
-        icon: 'https://raw.githubusercontent.com/Novanet-Studio/cmstem-fe/develop/static/email/whatsapp.png',
+        icon: 'https://raw.githubusercontent.com/Novanet-Studio/tem-core/main/static/email/whatsapp.png',
         link: '#',
       },
     ],
