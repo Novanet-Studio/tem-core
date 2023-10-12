@@ -18,4 +18,11 @@ export default defineNuxtConfig({
       receiverEmail: process.env.SENDGRID_RECEIVER_MAIL,
     },
   },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag: string) =>
+        ['swiper-container', 'swiper-slide'].includes(tag),
+    },
+  },
 });
