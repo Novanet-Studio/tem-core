@@ -271,3 +271,8 @@ setTimeout(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+:root {
+}
+</style>
