@@ -6,7 +6,7 @@ copyEmailsDir();
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['vue-email/nuxt'],
+  modules: ['vue-email/nuxt', '@vueuse/nuxt'],
   imports: {
     dirs: [join(__dirname, './emails'), join(__dirname, './types')],
   },
