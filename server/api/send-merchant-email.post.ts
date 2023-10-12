@@ -1,16 +1,22 @@
 import { useCompiler } from '#vue-email';
 import sgMail from '@sendgrid/mail';
+import { stringTemplates } from '../utils';
 
 export default defineEventHandler(async (event) => {
   try {
     const data = await readBody(event);
     const { sendgrid } = useRuntimeConfig();
+    const { email } = useAppConfig(event);
 
-    const template = await useCompiler('receipt.vue', {
+    const template = await useCompiler('merchant.vue', {
       props: {
+        preview: email.merchant.template.preview,
+        theme: email.merchant.template.theme,
+        header: email.merchant.template.header,
         body: {
           ...data,
         },
+        footer: email.merchant.template.footer,
       },
     });
 
@@ -19,8 +25,8 @@ export default defineEventHandler(async (event) => {
     const payload = {
       to: sendgrid.receiverEmail,
       from: sendgrid.senderEmail,
-      subject: `CCS MultiSport nueva orden ${data.orderId}`,
-      text: 'CCS MultiSport nueva orden',
+      subject: stringTemplates(email.merchant.subject, data),
+      text: email.merchant.text,
       html: template,
     };
 
