@@ -8,6 +8,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@unocss/reset/tailwind.css'],
   modules: ['vue-email/nuxt', '@vueuse/nuxt', '@unocss/nuxt'],
+  components: [
+    {
+      path: './components/ui',
+      prefix: 'UI',
+    },
+  ],
   imports: {
     dirs: [join(__dirname, './emails'), join(__dirname, './types')],
   },
