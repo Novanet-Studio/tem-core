@@ -18,7 +18,7 @@ const options = [
     <section>
       <h1 class="text-3xl underline text-white/80">Select:</h1>
       <div class="max-w-xs mx-auto">
-        <AppSelect
+        <UISelect
           v-bind="selected"
           label="name"
           value-key="code"
