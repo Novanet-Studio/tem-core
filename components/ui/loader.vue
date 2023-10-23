@@ -4,7 +4,7 @@ defineProps<{ border?: string; size?: string }>();
 
 <template>
   <div
-    class="ui-loader inline-block h-[var(--ui-loader-size)] w-[var(--ui-loader-size)] animate-spin rounded-full border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+    class="inline-block h-[var(--ui-loader-size)] w-[var(--ui-loader-size)] animate-spin rounded-full border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
     role="status"
     :style="{
       '--ui-loader-size': size || '1.5rem',
