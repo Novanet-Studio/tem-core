@@ -13,16 +13,10 @@
   "devDependencies": {
     "@iconify-json/ph": "^1.1.6",
     "@nuxt/devtools": "1.0.0",
-    "@types/fs-extra": "^11.0.3",
     "nuxt": "^3.8.0",
     "square": "^32.0.0",
     "vue": "^3.3.6",
     "vue-router": "^4.2.5"
   },
-  "dependencies": {
-    "@vueuse/core": "^10.5.0",
-    "@vueuse/nuxt": "^10.5.0",
-    "clsx": "^2.0.0",
-    "fs-extra": "^11.1.1"
-  }
+  "dependencies": {}
 }
